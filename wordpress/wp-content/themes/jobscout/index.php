@@ -30,19 +30,12 @@ get_header(); ?>
         width: 100%; 
     }
 }
-.service-item {
-	display: flex;
-    width: 48%;
-    background-color: #fff;
-    padding: 20px;
-    text-align: left;
-	box-sizing: border-box;
-}
+
 
 .service-image {
     margin-right: 20px;
-     max-width: 300px;
-    height: 295px; 
+    max-width: 220px;
+    height: 220px; 
     object-fit: cover;
 }
 
