@@ -94,6 +94,43 @@ get_header(); ?>
 	margin-top: 40px;
 }
 
+/* Responsive */
+@media (max-width: 992px) {
+    .service-item {
+        width: 100%; /* Một bài viết trên một hàng */
+        flex-direction: column; /* Đổi thành dọc */
+    }
+
+    .service-image {
+        width: 100%; /* Chiều rộng toàn bộ */
+        height: auto; /* Đảm bảo không méo ảnh */
+    }
+
+    .service-content {
+        padding: 15px;
+        align-items: flex-start; /* Căn trái nội dung */
+    }
+}
+
+@media (max-width: 576px) {
+    .newest-blog-title {
+        font-size: 24px;
+    }
+
+    .service-title {
+        font-size: 16px;
+    }
+
+    .service-description {
+        font-size: 12px;
+    }
+
+    .btn-wrap .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
 </style>
 	<div id="primary" class="content-area">
 		
