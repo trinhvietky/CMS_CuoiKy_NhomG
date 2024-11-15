@@ -2898,6 +2898,7 @@ ARTICLE SECTION
 section.article-section {
   margin: 70px 0;
   text-align: center;
+  background-color: #ddd;
 }
 
 .article-section .article-wrap {

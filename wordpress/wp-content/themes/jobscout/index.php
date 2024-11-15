@@ -31,17 +31,13 @@ get_header(); ?>
     }
 }
 
-
 .service-image {
     margin-right: 20px;
     max-width: 220px;
-    height: 220px; 
+    height: 200px;
     object-fit: cover;
 }
 
-.service-content {
-    flex: 1;
-}
 .service-title {
     font-size: 18px;
     font-weight: bold;
@@ -50,15 +46,17 @@ get_header(); ?>
 .service-description {
     font-size: 14px;
 }
+
 .service-item {
     display: flex;
     flex-direction: row;
     width: 48%;
     background-color: #fff;
-    padding: 20px;
+    padding: 15px;
     text-align: left;
     box-sizing: border-box;
-	 margin-bottom: 20px; 
+	margin-bottom: 20px;
+    align-items: center; /* Căn giữa theo chiều ngang */
 }
 
 .service-content {
