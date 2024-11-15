@@ -1852,11 +1852,12 @@ SIDEBARS
 .site-content {
   margin-top: 50px;
   margin-bottom: 50px;
+  background-color: #ddd;
 }
 
 .rightsidebar #primary {
   float: left;
-  width: 75%;
+  /* width: 75%; */
   padding-right: 40px;
 }
 
