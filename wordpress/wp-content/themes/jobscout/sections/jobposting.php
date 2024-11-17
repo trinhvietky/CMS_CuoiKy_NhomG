@@ -10,6 +10,9 @@ $ed_jobposting     = get_theme_mod( 'ed_jobposting', true );
 $count_posts       = wp_count_posts('job_listing'); 
 if ( $ed_jobposting && jobscout_is_wp_job_manager_activated() && $job_title  ) {
     ?>
+    <style>
+        
+    </style>
     <section id="job-posting-section" class="top-job-section">
         <div class="container">
             <?php 

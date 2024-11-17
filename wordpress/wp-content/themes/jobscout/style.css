@@ -2550,6 +2550,8 @@ section.top-job-section .section-title {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .top-job-section .row div.job_listings article {
@@ -2557,7 +2559,7 @@ section.top-job-section .section-title {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-right: 2.5%;
-  margin-bottom: 3%;
+  margin-bottom: 0%;
   border-radius: 5px;
   padding: 30px;
   position: relative;
