@@ -72,6 +72,25 @@
 		width: 45%;
 		padding: 20px;
 	}
+	.job-description {
+		font-family: Arial, sans-serif;
+		padding: 20px;
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 10px 25px;
+		font-size: 0.8888em;
+
+	}
+
+	.job-description ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	.job-description li {
+		font-size: 16px;
+	}
 </style>
 <?php
 /**
@@ -135,7 +154,27 @@ $job_date = get_the_date('M d, Y', get_the_ID());
 
 	</div>
 
-	<p class="job-description"><?php echo wp_trim_words(get_the_content(), 20, '...'); ?></p>
+	<!-- Mô tả ngắn công việc -->
+	<div class="job-description">
+		<ul>
+			<?php
+			$content = get_the_content(); // Get the content
+			$content = trim($content); // Loại bỏ khoảng trắng ở đầu và cuối nội dung
+			$lines = explode("\n", $content); // Split the content into lines based on newlines
+			$max_lines = 3; // Limit to 3 list items
+			$counter = 0;
+
+			foreach ($lines as $line) {
+				$line = trim($line); // Remove any extra spaces or newlines around the line
+				if (!empty($line) && $counter < $max_lines) { // Check if the line is not empty and we haven't reached the max number of lines
+					$trimmed_line = wp_trim_words($line, 10, '...'); // Trim each line to 20 words
+					echo '<li>' . esc_html($trimmed_line) . '</li>'; // Output each non-empty line as an <li>
+					$counter++; // Increment the counter after displaying a line
+				}
+			}
+			?>
+		</ul>
+	</div>
 	
 
 	<?php
