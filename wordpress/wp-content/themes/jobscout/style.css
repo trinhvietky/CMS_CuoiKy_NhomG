@@ -2299,6 +2299,7 @@ body.home:not(.banner-enabled) .site-header {
 /*========================
 SITE BANNER SECTION
 ========================*/
+
 .site-banner .item {
   position: relative;
 }
@@ -2308,7 +2309,6 @@ SITE BANNER SECTION
   top: 50%;
   left: 0;
   right: 0;
-  text-align: center;
   z-index: 9;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -2316,7 +2316,7 @@ SITE BANNER SECTION
 }
 
 .banner-caption .caption-inner {
-  max-width: 770px;
+  max-width: 998px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2359,20 +2359,25 @@ SITE BANNER SECTION
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  border-radius: 5px;
   overflow: hidden;
 }
 
 .banner-caption .jobscout_job_filters .search_jobs div.filter_first,
-.banner-caption .jobscout_job_filters .search_jobs div.search_keywords,
 .banner-caption .jobscout_job_filters .search_jobs div.filter_last,
 .banner-caption .jobscout_job_filters .search_jobs div.search_location {
   float: none;
   width: auto;
   padding-right: 0;
   display: flex;
-  flex: 1;
+  flex-grow: 1;
   padding-left: 0;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs div.search_keywords{
+  flex-grow: 2; /* Chiếm nhiều không gian hơn */
+  position: relative;
+  margin-right: 15px;
+  border-radius: 0;
 }
 
 .banner-caption .jobscout_job_filters .search_jobs div.filter_wide,
@@ -2397,13 +2402,12 @@ SITE BANNER SECTION
 .banner-caption .jobscout_job_filters .search_jobs select {
   border-radius: 0;
   height: 60px;
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
+  margin-right: 15px;
   font-size: 0.8888em;
   font-weight: 400;
-  padding: 10px 20px;
+  padding: 10px 10px 10px 45px;
   color: #666;
+  
 }
 
 .banner-caption .jobscout_job_filters .search_jobs input::placeholder {
@@ -2424,20 +2428,90 @@ SITE BANNER SECTION
 }
 
 .banner-caption .jobscout_job_filters .search_jobs input[type="submit"] {
-  padding: 0;
-  width: 60px;
-  background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%23fff" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg>');
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: center;
-  text-indent: 70px;
-  overflow: hidden;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  width: auto;
+  margin: 0;
+  font-weight: 600;
+  text-indent: 0;
+  color: #fff;
+  background-color: #ea751e; 
+  border: none;
 }
 
 .banner-caption .jobscout_job_filters .search_jobs input[type="submit"]:hover {
-  background-color: #fff;
-  background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%232ace5e" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg>');
+background-color: rgb(42, 231, 73);
+  color: #fff;
+}
+
+/* Wrapper for the form with background color and padding */
+.job_listings {
+  background-color: #3333336e; /* Background color around form */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Icon styling inside input fields */
+.search_keywords .icon,
+.search_location .icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ea751e; /* Icon color */
+  font-size: 1.2em;
+  pointer-events: none;
+}
+
+/* Form and Input Styling */
+.jobscout_job_filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search_jobs div {
+  position: relative;
+  flex: 1;
+}
+
+/* Input and select fields styling */
+.search_jobs input,
+.search_jobs select {
+  width: 100%;
+  border: none;
+}
+
+.search_jobs input::placeholder,
+.search_jobs select {
+  color: #666;
+}
+
+/* Submit button styling */
+.search_submit input[type="submit"] {
+  background-color: #ea751e;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search_submit input[type="submit"]:hover {
+  background-color: #ff8500;
+}
+
+/* Tăng kích thước cho trường tìm kiếm */
+.search_keywords {
+  flex-grow: 2; /* Chiếm nhiều không gian hơn */
+  position: relative;
+}
+
+/* Giảm kích thước cho trường chọn vị trí */
+.search_location {
+  flex-grow: 1; /* Chiếm ít không gian hơn */
+  position: relative;
 }
 
 /*=========================
