@@ -2445,10 +2445,10 @@ background-color: rgb(42, 231, 73);
 
 /* Wrapper for the form with background color and padding */
 .job_listings {
-  background-color: #3333336e; /* Background color around form */
-  padding: 20px;
-  text-align: center;
-  color: #fff;
+  /*background-color: #3333336e;*/ /* Background color around form */
+  /*padding: 20px;*/
+  /*text-align: center;*/
+  /*color: #fff;*/
 }
 
 /* Icon styling inside input fields */
