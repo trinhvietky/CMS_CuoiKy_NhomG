@@ -1,6 +1,20 @@
 <style>
 	.entry-title a {
 		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	.entry-title a:hover {
+		text-decoration: none;
+	}
+
+	.entry-content .job_listings .job_listings {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		/* 2 cột bằng nhau */
+		gap: 20px;
+		/* Khoảng cách giữa các ô */
+		margin: 20px auto
 	}
 
 	.job-date {
@@ -62,7 +76,7 @@
 	}
 
 	/* Thiết lập giới hạn chiều rộng cho mô tả công việc */
-	.job-description{
+	.job-description {
 		margin: 20px 0px 0px 0px;
 		font-size: 16px;
 		padding-left: 15px;
@@ -72,6 +86,7 @@
 		width: 45%;
 		padding: 20px;
 	}
+
 	.job-description {
 		font-family: Arial, sans-serif;
 		padding: 20px;
@@ -175,7 +190,7 @@ $job_date = get_the_date('M d, Y', get_the_ID());
 			?>
 		</ul>
 	</div>
-	
+
 
 	<?php
 	do_action('job_listing_meta_end');
