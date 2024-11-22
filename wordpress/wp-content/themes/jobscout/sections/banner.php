@@ -6,7 +6,7 @@
  */
 
 $ed_banner = get_theme_mod('ed_banner_section', true);
-$banner_title = get_theme_mod('banner_title', __('Tìm kiếm công việc mơ ước của bạn', 'jobscout'));
+$banner_title = get_theme_mod('banner_title', __('Tìm kiếm công việc - Hướng đến tương lai', 'jobscout'));
 $banner_subtitle = get_theme_mod('banner_subtitle', __('Chúng tôi cam kết mang đến trải nghiệm tìm kiếm nhanh chóng và hiệu quả, giúp ứng viên khám phá được công việc mơ ước, đồng thời giúp nhà tuyển dụng tìm kiếm được những nhân tài sáng giá. Hãy bắt đầu hành trình sự nghiệp của bạn ngay hôm nay cùng chúng tôi và khám phá các cơ hội nghề nghiệp mới nhất!', 'jobscout'));
 $find_a_job_link = get_option('job_manager_jobs_page_id', 0);
 

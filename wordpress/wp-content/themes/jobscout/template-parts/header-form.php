@@ -30,7 +30,7 @@ if ($post_slug) {
         <input type="text" id="search_keywords" name="search_keywords"
           placeholder="<?php esc_attr_e('Search for jobs, companies, skills', 'jobscout'); ?>">
       </div>
-      <!-- Select vị trí -->
+      
       <div class="search_location">
         <?php
         global $wpdb;
