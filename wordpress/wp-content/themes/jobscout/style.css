@@ -2494,7 +2494,7 @@ SITE BANNER SECTION
 .search_submit input[type="submit"] {
   background-color: #2ace5e;
   color: #fff;
-  border: none;
+  border: 1px solid #2ace5e;
   padding: 10px 30px;
   border-radius: 5px;
   font-weight: bold;
@@ -2504,11 +2504,6 @@ SITE BANNER SECTION
 .search_submit input[type="submit"]:hover {
   background: none;
   color: #2ace5e;
-}
-
-.search_submit input[type="submit"]:focus {
-  outline: thin dotted #000;
-  outline-offset: 2px;
 }
 
 /* Tăng kích thước cho trường tìm kiếm */
