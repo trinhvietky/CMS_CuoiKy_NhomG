@@ -26,10 +26,12 @@ if( $ed_blog && ( $blog_heading || $sub_title || $qry->have_posts() ) ){ ?>
 <style>
 
 .services-container {
-	background-color: #ddd;
+	background-color: rgba(242, 242, 242, 1);
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    /* gap: 20px; */
+    column-gap: 10px;
+    row-gap: 40px;
     justify-content: space-between;
 	
 }
@@ -58,12 +60,12 @@ if( $ed_blog && ( $blog_heading || $sub_title || $qry->have_posts() ) ){ ?>
 .service-item {
     display: flex;
     flex-direction: row;
-    width: 48%;
+    width: 49%;
     background-color: #fff;
     padding: 15px;
     text-align: left;
     box-sizing: border-box;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
     align-items: center; /* Căn giữa theo chiều ngang */
 }
 

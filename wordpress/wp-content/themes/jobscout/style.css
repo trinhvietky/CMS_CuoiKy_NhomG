@@ -1852,7 +1852,7 @@ SIDEBARS
 .site-content {
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #ddd;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .rightsidebar #primary {
@@ -2980,7 +2980,7 @@ ARTICLE SECTION
 section.article-section {
   margin: 70px 0;
   text-align: center;
-  background-color: #ddd;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .article-section .article-wrap {

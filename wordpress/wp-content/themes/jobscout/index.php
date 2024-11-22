@@ -18,11 +18,14 @@ get_header(); ?>
 <style>
 
 .services-container {
-	background-color: #ddd;
+	background-color: rgba(242, 242, 242, 1);
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    /* gap: 20px; */
+    column-gap: 10px;
+    row-gap: 40px;
     justify-content: space-between;
+    margin-bottom: 40px;
 	
 }
 @media (max-width: 768px) {
@@ -50,12 +53,12 @@ get_header(); ?>
 .service-item {
     display: flex;
     flex-direction: row;
-    width: 48%;
+    width: 49%;
     background-color: #fff;
     padding: 15px;
     text-align: left;
     box-sizing: border-box;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
     align-items: center; /* Căn giữa theo chiều ngang */
 }
 
