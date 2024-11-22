@@ -2373,8 +2373,9 @@ SITE BANNER SECTION
   padding-left: 0;
 }
 
-.banner-caption .jobscout_job_filters .search_jobs div.search_keywords{
-  flex-grow: 2; /* Chiếm nhiều không gian hơn */
+.banner-caption .jobscout_job_filters .search_jobs div.search_keywords {
+  flex-grow: 2;
+  /* Chiếm nhiều không gian hơn */
   position: relative;
   margin-right: 15px;
   border-radius: 0;
@@ -2407,7 +2408,7 @@ SITE BANNER SECTION
   font-weight: 400;
   padding: 10px 10px 10px 45px;
   color: #666;
-  
+
 }
 
 .banner-caption .jobscout_job_filters .search_jobs input::placeholder {
@@ -2434,18 +2435,19 @@ SITE BANNER SECTION
   font-weight: 600;
   text-indent: 0;
   color: #fff;
-  background-color: #ea751e; 
+  background-color: #ea751e;
   border: none;
 }
 
 .banner-caption .jobscout_job_filters .search_jobs input[type="submit"]:hover {
-background-color: rgb(42, 231, 73);
+  background-color: rgb(42, 231, 73);
   color: #fff;
 }
 
 /* Wrapper for the form with background color and padding */
 .job_listings {
-  /*background-color: #3333336e;*/ /* Background color around form */
+  /*background-color: #3333336e;*/
+  /* Background color around form */
   /*padding: 20px;*/
   /*text-align: center;*/
   /*color: #fff;*/
@@ -2458,7 +2460,8 @@ background-color: rgb(42, 231, 73);
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #ea751e; /* Icon color */
+  color: #ea751e;
+  /* Icon color */
   font-size: 1.2em;
   pointer-events: none;
 }
@@ -2489,9 +2492,9 @@ background-color: rgb(42, 231, 73);
 
 /* Submit button styling */
 .search_submit input[type="submit"] {
-  background-color: #ea751e;
+  background-color: #2ace5e;
   color: #fff;
-  border: none;
+  border: 1px solid #2ace5e;
   padding: 10px 30px;
   border-radius: 5px;
   font-weight: bold;
@@ -2499,18 +2502,21 @@ background-color: rgb(42, 231, 73);
 }
 
 .search_submit input[type="submit"]:hover {
-  background-color: #ff8500;
+  background: none;
+  color: #2ace5e;
 }
 
 /* Tăng kích thước cho trường tìm kiếm */
 .search_keywords {
-  flex-grow: 2; /* Chiếm nhiều không gian hơn */
+  flex-grow: 2;
+  /* Chiếm nhiều không gian hơn */
   position: relative;
 }
 
 /* Giảm kích thước cho trường chọn vị trí */
 .search_location {
-  flex-grow: 1; /* Chiếm ít không gian hơn */
+  flex-grow: 1;
+  /* Chiếm ít không gian hơn */
   position: relative;
 }
 
